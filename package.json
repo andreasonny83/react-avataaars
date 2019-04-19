@@ -3,6 +3,7 @@
   "description": "React component for the Avataaars library",
   "version": "0.1.1",
   "main": "lib/react-avataaars.js",
+  "types": "lib/index.d.ts",
   "peerDependencies": {
     "react": "^16.0.0"
   },
@@ -53,13 +54,5 @@
   "homepage": "https://github.com/andreasonny83/react-avataaars#readme",
   "files": [
     "lib"
-  ],
-  "config": {
-    "port": 8000,
-    "entry": {
-      "react-avataaars": [
-        "./lib/react-avataaars.js"
-      ]
-    }
-  }
+  ]
 }
