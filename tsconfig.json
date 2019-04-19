@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "removeComments": true,
+    "declaration": true,
+    "outDir": "./lib",
+    "lib": ["es6", "es7", "dom"]
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"],
+  "types": ["jest", "node"]
+}
