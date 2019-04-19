@@ -1,7 +1,7 @@
 {
   "name": "react-avataaars",
   "description": "React component for the Avataaars library",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/react-avataaars.js",
   "peerDependencies": {
     "react": "^16.0.0"
