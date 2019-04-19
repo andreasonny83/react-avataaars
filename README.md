@@ -2,6 +2,13 @@
 
 Inspired by [React component for Avataaars](https://github.com/fangpenlin/avataaars).
 
+![license](https://img.shields.io/npm/l/react-avataaars.svg?style=flat-square)
+[![npm](https://img.shields.io/npm/v/react-avataaars.svg?style=flat-square)](https://www.npmjs.com/package/react-avataaars)
+
+<p align="center"><img src='react-avataaars.png?raw=true' style='width: 300px; height: 300px;' /></p>
+
+Live Demo available [HERE!](https://stackblitz.com/edit/react-avataaars)
+
 ## Installation
 
 First install the package with npm
@@ -73,11 +80,11 @@ export default App;
 ## Contributing
 
 1.  Fork it!
-1.  Create your feature branch: `git checkout -b my-new-feature`
-1.  Add your changes: `git add .`
-1.  Commit your changes: `git commit -am 'Add some feature'`
-1.  Push to the branch: `git push origin my-new-feature`
-1.  Submit a pull request :sunglasses:
+2.  Create your feature branch: `git checkout -b my-new-feature`
+3.  Add your changes: `git add .`
+4.  Commit your changes: `git commit -am 'Add some feature'`
+5.  Push to the branch: `git push origin my-new-feature`
+6.  Submit a pull request :sunglasses:
 
 ## Credits
 
