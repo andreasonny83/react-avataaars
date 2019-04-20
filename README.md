@@ -5,7 +5,7 @@ Inspired by [React component for Avataaars](https://github.com/fangpenlin/avataa
 ![license](https://img.shields.io/npm/l/react-avataaars.svg?style=flat-square)
 [![npm](https://img.shields.io/npm/v/react-avataaars.svg?style=flat-square)](https://www.npmjs.com/package/react-avataaars)
 
-<p align="center"><img src='react-avataaars.png?raw=true' style='width: 300px; height: 300px;' /></p>
+<p align="center"><img src='react-avataaars.png?raw=true' style='width: 100%;height:100%;max-width:600px' /></p>
 
 Live Demo available [HERE!](https://stackblitz.com/edit/react-avataaars)
 
