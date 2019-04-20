@@ -77,6 +77,14 @@ class App extends PureComponent {
 export default App;
 ```
 
+## Run example
+
+```sh
+$ npm run example
+```
+
+This will serve the `example` folder in this project against the development (`src`) folder of the React Avataaars project.
+
 ## Contributing
 
 1.  Fork it!

@@ -2,12 +2,11 @@ export interface Options {
   mode?: 'include' | 'exclude';
   style?: 'transparent' | 'circle';
   top?: 'longHair' | 'shortHair' | 'eyepatch' | 'hat' | 'hijab' | 'turban';
-  topChance?: 100;
-  hatColor?: 'black' | 'blue' | 'gray' | 'heather' | 'pastel' | 'pink' | 'red' | 'white';
+  topChance?: number;
   hairColor?: 'auburn' | 'black' | 'blonde' | 'brown' | 'pastel' | 'platinum' | 'red' | 'gray';
   accessories?: 'kurt' | 'prescription01' | 'prescription02' | 'round' | 'sunglasses' | 'wayfarers';
   accessoriesChance?: number;
-  facialHair?: 'medium' | 'light' | 'magestic' | 'fancy' | 'magnum';
+  facialHair?: 'medium' | 'light' | 'majestic' | 'fancy' | 'magnum';
   facialHairChance?: number;
   facialHairColor?: 'auburn' | 'black' | 'blonde' | 'brown' | 'platinum' | 'red';
   clothes?: 'blazer' | 'sweater' | 'shirt' | 'hoodie' | 'overall';

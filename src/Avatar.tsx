@@ -10,6 +10,7 @@ import {
   getClotheType,
   getEyebrowType,
   getEyeType,
+  getFacialHairColor,
   getFacialHairType,
   getHairColor,
   getMouthType,
@@ -21,27 +22,28 @@ interface AvatarProps {
   hash?: string;
   options?: Options;
   className?: string;
-  width?: string;
-  height?: string;
+  size?: string;
 }
 
 export class Avatar extends React.PureComponent<AvatarProps> {
   public render() {
-    const { width, height, hash = 'hash', options = {} } = this.props;
-
+    const { className, hash = 'hash', size = 260, options = {} } = this.props;
+    const width = size;
+    const height = size;
     const random = new Random(hash);
     const hairColor = getHairColor(options, random);
+    const facialHairColor = options.facialHairColor ? getFacialHairColor(options, random) : hairColor;
 
     return (
-      (options && random && hairColor && (
+      <div className={className} style={{ width, height }}>
         <Avataaar
-          style={{ width, height }}
+          style={{ width: '100%', height: '100%' }}
           avatarStyle={getAvatarStyle(options)}
           topType={getTopType(options, random)}
           accessoriesType={getAccessoriesType(options, random)}
           hairColor={hairColor}
           facialHairType={getFacialHairType(options, random)}
-          facialHairColor={hairColor}
+          facialHairColor={facialHairColor}
           clotheType={getClotheType(options, random)}
           clotheColor={getClotheColor(options, random)}
           eyeType={getEyeType(options, random)}
@@ -49,8 +51,7 @@ export class Avatar extends React.PureComponent<AvatarProps> {
           mouthType={getMouthType(options, random)}
           skinColor={getSkinColor(options, random)}
         />
-      )) ||
-      null
+      </div>
     );
   }
 }
