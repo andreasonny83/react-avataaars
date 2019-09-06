@@ -6,11 +6,22 @@ module.exports = {
   output: {
     path: path.resolve('lib'),
     filename: 'react-avataaars.js',
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'umd',
+    library: 'ReactAvataaars',
+    globalObject: `typeof self !== 'undefined' ? self : this`,
+    umdNamedDefine: true,
   },
   devtool: 'source-map',
   resolve: {
-    extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
+    extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
+  },
+  externals: {
+    react: {
+      root: 'React',
+      amd: 'react',
+      commonjs: 'react',
+      commonjs2: 'react',
+    },
   },
   module: {
     rules: [
@@ -21,4 +32,7 @@ module.exports = {
       },
     ],
   },
+  optimization: {
+    minimize: true
+  }
 };
