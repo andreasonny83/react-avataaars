@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Avatar, Options } from '../src/index';
+import { Avatar, Options } from '../';
 import './App.css';
 
 export default class App extends React.Component {

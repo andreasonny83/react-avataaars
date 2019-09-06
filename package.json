@@ -34,6 +34,7 @@
   "scripts": {
     "build": "rimraf lib && webpack",
     "postbuild": "es-check es5 lib/react-avataaars.js",
+    "preexample": "npm run build",
     "example": "webpack-dev-server --config ./webpack.example.config.js --open",
     "preexample-html": "npm run build",
     "example-html": "open example-html/index.html",
