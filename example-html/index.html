@@ -7,11 +7,15 @@
     <title>react-avataaars</title>
     <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
-    <script src="../lib/react-avataaars.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <script src="https://unpkg.com/react-avataaars@0.2.3/lib/react-avataaars.js"></script>
   </head>
   <body>
+    <style>
+      html, body { margin: 0; padding: 0; font-family: 'Roboto', Arial, sans-serif; }
+      #root { margin: 0 auto; max-width: 600px; text-align: center; }
+      svg { width: auto !important; }
+    </style>
     <div id="root"></div>
     <script type="text/babel">
       const hash = 'type-anything-here';
@@ -30,7 +34,7 @@
       ReactDOM.render(
         <div>
           <h1>React Avataaars without npm 🎉</h1>
-          <ReactAvataaars.Avatar style={{width: 300}} className="Avatar" options={options} hash={hash} size="200" />
+          <ReactAvataaars.Avatar style={{ width: 300 }} className="Avatar" options={options} hash={hash} size="200" />
         </div>,
         document.getElementById('root'),
       );
