@@ -85,6 +85,15 @@ $ npm run example
 
 This will serve the `example` folder in this project against the development (`src`) folder of the React Avataaars project.
 
+There is also an `npm-less` version of the example using the minimised JavaScript version of the library running inside just one HTML file with nothing else.
+You can see that in action by running:
+
+```sh
+$ npm run example-html
+```
+
+Or just check out the `example-html` folder in this repository if you are interested in the code.
+
 ## Contributing
 
 1.  Fork it!
